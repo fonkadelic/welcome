@@ -1,7 +1,45 @@
-[
-  {
-    "title" : "arabisch",
-    "subtitle" : "deutsch",
-    "emoji" : [ "🍅", "🍲", "🌽" ]
-  }
-]
+{
+  "start_guides" : [ 1, 2, 3],
+  "guides" : [
+    {
+      "id" : 1,
+      "title" : "ه اشدث فخ ساخح",
+      "subtitle" : "I need to buy something",
+      "emoji" : "🛍",
+      "sub_guides" : [10, 11, 12]
+    },
+    {
+      "id" : 2,
+      "title" : "ه رثثي وثيهذهرث",
+      "subtitle" : "I need a doctor/medicine",
+      "emoji" : "🤕",
+      "sub_guides" : [10, 11, 12]
+    },
+    {
+      "id" : 3,
+      "title" : "ه رثثي فقشرسحخقف",
+      "subtitle" : "I need transport",
+      "emoji" : "🚍",
+      "sub_guides" : [10, 11, 12]
+    },
+    {
+      "id" : 10,
+      "title" : "ه صشر فخ زعظ بخخي",
+      "subtitle" : "Ich möchte Essen kaufen",
+      "emoji" : "🍅",
+    },
+    {
+      "id" : 11,
+      "title" : "ه صشر فخ زعظ بخخي",
+      "subtitle" : "Ich möchte Essen kaufen",
+      "emoji" : "🍅",
+    },
+    {
+      "id" : 12,
+      "title" : "ه صشر فخ زعظ بخخي",
+      "subtitle" : "Ich möchte Essen kaufen",
+      "emoji" : "🍅",
+    },
+
+  ]
+}
