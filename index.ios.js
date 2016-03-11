@@ -3,6 +3,7 @@
 var React = require('react-native');
 
 var TabBarNavigation = require('./TabBarNavigation.js');
+var Language = require('./Landing/language.js');
 
 var {
   AppRegistry,
@@ -10,12 +11,36 @@ var {
   Text,
   View,
   Image,
+  Modal,
 } = React;
 
 var welcome = React.createClass({
+  getInitialState: function() {
+    return {
+      modalVisible: true,
+      language: null,
+    }
+  },
+
+  onSelect: function(language) {
+    this.setState({
+      language: language,
+    });
+    this.setState({
+      modalVisible: false,
+    });
+  },
+
   render: function() {
     return (
-      <TabBarNavigation />
+      <View style={{flex: 1}}>
+        <Modal
+          animated={true}
+          visible={this.state.modalVisible}>
+          <Language onSelect={this.onSelect} />
+        </Modal>
+        <TabBarNavigation language={this.state.language} />
+      </View>
     );
   },
 });
