@@ -4,8 +4,11 @@ var React = require('react-native');
 var _styles = require('./styles.js');
 var Icon = require('react-native-vector-icons/FontAwesome');
 var Guide = require('./Guide.js');
+var Chat = require('./Chat.js');
 var Addresses = require('./Addresses.js');
 var InfoSearch = require('./InfoSearch.js');
+var Profile = require('./Profile.js');
+var I18nService = require('./i18n.js');
 
 var {
   AppRegistry,
@@ -14,9 +17,20 @@ var {
   View,
   Image,
   TabBarIOS,
+  NavigatorIOS,
 } = React;
 
 var TabBarNavigation = React.createClass({
+  propTypes: {
+    language: React.PropTypes.string,
+  },
+
+  getDefaultProps: function() {
+    return {
+      language: null,
+    }
+  },
+
   getInitialState: function() {
     return {
       selectedTab: 'guide',
@@ -24,10 +38,13 @@ var TabBarNavigation = React.createClass({
   },
 
   render: function() {
+    I18nService.set("en");
+    var I18n = I18nService.get();
+
     return (
       <TabBarIOS>
         <Icon.TabBarItem
-          title="Guide"
+          title={I18n.t("guide")}
           selected={this.state.selectedTab === 'guide'}
           iconName={'clone'}
           iconSize={20}
@@ -36,10 +53,32 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'guide'
             });
           }}>
-          <Guide />
+          <NavigatorIOS
+              style={_styles.navigationContainer}
+              initialRoute={{
+              title: I18n.t("guide"),
+              component: Guide,
+            }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
-          title="Info Search"
+          title={I18n.t("chat")}
+          selected={this.state.selectedTab === 'chat'}
+          iconName={'clone'}
+          iconSize={20}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'chat'
+            });
+          }}>
+          <NavigatorIOS
+              style={_styles.navigationContainer}
+              initialRoute={{
+              title: I18n.t("chat"),
+              component: Chat,
+            }}/>
+        </Icon.TabBarItem>
+        <Icon.TabBarItem
+          title={I18n.t("infosearch")}
           selected={this.state.selectedTab === 'infosearch'}
           iconName={'bus'}
           iconSize={20}
@@ -48,10 +87,10 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'infosearch'
             });
           }}>
-          <InfoSearch />
+          <InfoSearch {...this.props} />
         </Icon.TabBarItem>
         <Icon.TabBarItem
-          title="Addresses"
+          title={I18n.t("addresses")}
           selected={this.state.selectedTab === 'addresses'}
           iconName={'bell'}
           iconSize={20}
@@ -60,7 +99,19 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'addresses'
             });
           }}>
-          <Addresses />
+          <Addresses {...this.props} />
+        </Icon.TabBarItem>
+        <Icon.TabBarItem
+          title="Profile"
+          selected={this.state.selectedTab === 'profile'}
+          iconName={'user'}
+          iconSize={20}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'profile'
+            });
+          }}>
+          <Profile {...this.props} />
         </Icon.TabBarItem>
       </TabBarIOS>
     );
