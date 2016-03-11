@@ -6,6 +6,7 @@ var Icon = require('react-native-vector-icons/FontAwesome');
 var Guide = require('./Guide.js');
 var Addresses = require('./Addresses.js');
 var InfoSearch = require('./InfoSearch.js');
+var Profile = require('./Profile.js');
 
 var {
   AppRegistry,
@@ -61,6 +62,18 @@ var TabBarNavigation = React.createClass({
             });
           }}>
           <Addresses />
+        </Icon.TabBarItem>
+        <Icon.TabBarItem
+          title="Profile"
+          selected={this.state.selectedTab === 'profile'}
+          iconName={'user'}
+          iconSize={20}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'profile'
+            });
+          }}>
+          <Profile />
         </Icon.TabBarItem>
       </TabBarIOS>
     );
