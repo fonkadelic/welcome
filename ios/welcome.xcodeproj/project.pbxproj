@@ -41,6 +41,17 @@
 		17A1EB371C92FC3A00FB8D83 /* iraq.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB341C92FC3A00FB8D83 /* iraq.png */; };
 		17A1EB381C92FC3A00FB8D83 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB351C92FC3A00FB8D83 /* path.png */; };
 		17A1EB661C930DFB00FB8D83 /* libRNI18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EB611C930DF600FB8D83 /* libRNI18n.a */; };
+		17A1EB8A1C931C3A00FB8D83 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB811C931C3A00FB8D83 /* bus.png */; };
+		17A1EB8C1C931C3A00FB8D83 /* family.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB831C931C3A00FB8D83 /* family.png */; };
+		17A1EB8D1C931C3A00FB8D83 /* hugging-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB841C931C3A00FB8D83 /* hugging-face.png */; };
+		17A1EB8E1C931C3A00FB8D83 /* station.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB851C931C3A00FB8D83 /* station.png */; };
+		17A1EB8F1C931C3A00FB8D83 /* thumbs-down-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB861C931C3A00FB8D83 /* thumbs-down-sign.png */; };
+		17A1EB901C931C3A00FB8D83 /* thumbs-up-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB871C931C3A00FB8D83 /* thumbs-up-sign.png */; };
+		17A1EB911C931C3A00FB8D83 /* waving-hand-sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB881C931C3A00FB8D83 /* waving-hand-sign.png */; };
+		17A1EBA21C93315C00FB8D83 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBA01C93315C00FB8D83 /* man.png */; };
+		17A1EBA31C93315C00FB8D83 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBA11C93315C00FB8D83 /* woman.png */; };
+		17A1EBAA1C9338C200FB8D83 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EBA91C9338BB00FB8D83 /* libSpeechSynthesizer.a */; };
+		17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBAB1C9339D600FB8D83 /* tram-car.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +147,13 @@
 			remoteGlobalIDString = CDD7BF831B2D5126006FDA75;
 			remoteInfo = RNI18nTests;
 		};
+		17A1EBA81C9338BB00FB8D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A1EBA41C9338BB00FB8D83 /* SpeechSynthesizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = SpeechSynthesizer;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -194,6 +212,19 @@
 		17A1EB341C92FC3A00FB8D83 /* iraq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iraq.png; sourceTree = "<group>"; };
 		17A1EB351C92FC3A00FB8D83 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
 		17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
+		17A1EB801C931C3A00FB8D83 /* 531ac91dc00d2ae161d9592454f60430.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 531ac91dc00d2ae161d9592454f60430.png; sourceTree = "<group>"; };
+		17A1EB811C931C3A00FB8D83 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
+		17A1EB821C931C3A00FB8D83 /* c1cb7bea54ad4001162f8363b0d1b5c4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1cb7bea54ad4001162f8363b0d1b5c4.png; sourceTree = "<group>"; };
+		17A1EB831C931C3A00FB8D83 /* family.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = family.png; sourceTree = "<group>"; };
+		17A1EB841C931C3A00FB8D83 /* hugging-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hugging-face.png"; sourceTree = "<group>"; };
+		17A1EB851C931C3A00FB8D83 /* station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station.png; sourceTree = "<group>"; };
+		17A1EB861C931C3A00FB8D83 /* thumbs-down-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-down-sign.png"; sourceTree = "<group>"; };
+		17A1EB871C931C3A00FB8D83 /* thumbs-up-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbs-up-sign.png"; sourceTree = "<group>"; };
+		17A1EB881C931C3A00FB8D83 /* waving-hand-sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "waving-hand-sign.png"; sourceTree = "<group>"; };
+		17A1EBA01C93315C00FB8D83 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
+		17A1EBA11C93315C00FB8D83 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
+		17A1EBA41C9338BB00FB8D83 /* SpeechSynthesizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpeechSynthesizer.xcodeproj; path = "../node_modules/react-native-speech/SpeechSynthesizer.xcodeproj"; sourceTree = "<group>"; };
+		17A1EBAB1C9339D600FB8D83 /* tram-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tram-car.png"; path = "../images/tram-car.png"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A1EBAA1C9338C200FB8D83 /* libSpeechSynthesizer.a in Frameworks */,
 				17A1EB661C930DFB00FB8D83 /* libRNI18n.a in Frameworks */,
 				17A1EACC1C92B68B00FB8D83 /* libRNSearchBar.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -349,6 +381,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17A1EBA51C9338BB00FB8D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A1EBA91C9338BB00FB8D83 /* libSpeechSynthesizer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +400,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				17A1EBA41C9338BB00FB8D83 /* SpeechSynthesizer.xcodeproj */,
 				17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */,
 				17A1EABB1C92B68300FB8D83 /* RNSearchBar.xcodeproj */,
 				17A1EA9D1C9235B400FB8D83 /* RNVectorIcons.xcodeproj */,
@@ -388,6 +429,18 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				17A1EBAB1C9339D600FB8D83 /* tram-car.png */,
+				17A1EBA01C93315C00FB8D83 /* man.png */,
+				17A1EBA11C93315C00FB8D83 /* woman.png */,
+				17A1EB801C931C3A00FB8D83 /* 531ac91dc00d2ae161d9592454f60430.png */,
+				17A1EB811C931C3A00FB8D83 /* bus.png */,
+				17A1EB821C931C3A00FB8D83 /* c1cb7bea54ad4001162f8363b0d1b5c4.png */,
+				17A1EB831C931C3A00FB8D83 /* family.png */,
+				17A1EB841C931C3A00FB8D83 /* hugging-face.png */,
+				17A1EB851C931C3A00FB8D83 /* station.png */,
+				17A1EB861C931C3A00FB8D83 /* thumbs-down-sign.png */,
+				17A1EB871C931C3A00FB8D83 /* thumbs-up-sign.png */,
+				17A1EB881C931C3A00FB8D83 /* waving-hand-sign.png */,
 				17A1EB331C92FC3A00FB8D83 /* afghanistan.png */,
 				17A1EB341C92FC3A00FB8D83 /* iraq.png */,
 				17A1EB351C92FC3A00FB8D83 /* path.png */,
@@ -543,6 +596,10 @@
 					ProductGroup = 17A1EA9E1C9235B400FB8D83 /* Products */;
 					ProjectRef = 17A1EA9D1C9235B400FB8D83 /* RNVectorIcons.xcodeproj */;
 				},
+				{
+					ProductGroup = 17A1EBA51C9338BB00FB8D83 /* Products */;
+					ProjectRef = 17A1EBA41C9338BB00FB8D83 /* SpeechSynthesizer.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -637,6 +694,13 @@
 			remoteRef = 17A1EB621C930DF600FB8D83 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		17A1EBA91C9338BB00FB8D83 /* libSpeechSynthesizer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpeechSynthesizer.a;
+			remoteRef = 17A1EBA81C9338BB00FB8D83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -665,6 +729,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */,
+				17A1EBA21C93315C00FB8D83 /* man.png in Resources */,
+				17A1EBA31C93315C00FB8D83 /* woman.png in Resources */,
+				17A1EB8A1C931C3A00FB8D83 /* bus.png in Resources */,
+				17A1EB8C1C931C3A00FB8D83 /* family.png in Resources */,
+				17A1EB8D1C931C3A00FB8D83 /* hugging-face.png in Resources */,
+				17A1EB8E1C931C3A00FB8D83 /* station.png in Resources */,
+				17A1EB8F1C931C3A00FB8D83 /* thumbs-down-sign.png in Resources */,
+				17A1EB901C931C3A00FB8D83 /* thumbs-up-sign.png in Resources */,
+				17A1EB911C931C3A00FB8D83 /* waving-hand-sign.png in Resources */,
 				17A1EB361C92FC3A00FB8D83 /* afghanistan.png in Resources */,
 				17A1EB371C92FC3A00FB8D83 /* iraq.png in Resources */,
 				17A1EB381C92FC3A00FB8D83 /* path.png in Resources */,

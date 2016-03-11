@@ -42,7 +42,8 @@ var TabBarNavigation = React.createClass({
     var I18n = I18nService.get();
 
     return (
-      <TabBarIOS>
+      <TabBarIOS
+        tintColor="#156fc0">
         <Icon.TabBarItem
           title={I18n.t("guide")}
           selected={this.state.selectedTab === 'guide'}
@@ -75,6 +76,8 @@ var TabBarNavigation = React.createClass({
               initialRoute={{
               title: I18n.t("chat"),
               component: Chat,
+              barTintColor: "#156fc0",
+              titleTextColor: "white",
             }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
