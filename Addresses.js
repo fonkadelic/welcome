@@ -108,10 +108,12 @@ var addressstyles = StyleSheet.create({
   phonenumber: {
     fontSize: 20,
     marginLeft: 8,
-    marginTop: 9,
+    marginTop: 8,
     textAlign: 'center',
   },
   list: {
+    paddingTop: 8,
+    paddingBottom: 8,
     backgroundColor: '#EEEEEE',
   },
   row: {
