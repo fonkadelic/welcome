@@ -7,9 +7,9 @@ var GuideItem = require('./GuideItem.js')
 
 
 var MOCKED_ADDRESS_DATA = { "addresses" : [
-  {"id" : 1, "title": "Rettungsdienst/Feuerwehr", "subtitle" : "Rettungsdienst/Feuerwehr", "phonenumber": "112", "emoji" : "🚒 🚑", "images": {"thumbnail": "https://robohash.org/Notruf"}},
-  {"id" : 2, "title": "Polizei", "subtitle": "Polizei", "phonenumber": "110", "emoji" : "🚔", "images": {"thumbnail": "https://robohash.org/Polizei"}},
-  {"id" : 3, "title": "Frauennotruf", "subtitle": "Frauennotruf", "phonenumber": "+49 941 24171", "emoji" : "👩🏽", "images": {"thumbnail": "https://robohash.org/Frauennotruf"}}
+  {"id" : 1, "title": "مكالمة طوارئ", "subtitle" : "Rettungsdienst/Feuerwehr", "phonenumber": "112", "emoji" : "🚒 🚑", "images": {"thumbnail": "https://robohash.org/Notruf"}},
+  {"id" : 2, "title": "شرطة", "subtitle": "Polizei", "phonenumber": "110", "emoji" : "🚔", "images": {"thumbnail": "https://robohash.org/Polizei"}},
+  {"id" : 3, "title": "طوارئ النساء", "subtitle": "Frauennotruf", "phonenumber": "+49 941 24171", "emoji" : "👩🏽", "images": {"thumbnail": "https://robohash.org/Frauennotruf"}}
 ]};
 
 var {
