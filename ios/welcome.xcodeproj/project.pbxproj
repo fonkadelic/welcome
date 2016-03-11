@@ -23,6 +23,7 @@
 		17A1EAA31C9235B700FB8D83 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EAA21C9235B400FB8D83 /* libRNVectorIcons.a */; };
 		17A1EAA51C9235DC00FB8D83 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EAA41C9235DC00FB8D83 /* FontAwesome.ttf */; };
 		17A1EACC1C92B68B00FB8D83 /* libRNSearchBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EACA1C92B68300FB8D83 /* libRNSearchBar.a */; };
+		17A1EAE51C92C51100FB8D83 /* dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EAE41C92C51100FB8D83 /* dummy.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		17A1EA9D1C9235B400FB8D83 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		17A1EAA41C9235DC00FB8D83 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		17A1EABB1C92B68300FB8D83 /* RNSearchBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSearchBar.xcodeproj; path = "../node_modules/react-native-search-bar/RNSearchBar.xcodeproj"; sourceTree = "<group>"; };
+		17A1EAE41C92C51100FB8D83 /* dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dummy.png; path = ../images/dummy.png; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -327,6 +329,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				17A1EAE41C92C51100FB8D83 /* dummy.png */,
 				17A1EAA41C9235DC00FB8D83 /* FontAwesome.ttf */,
 				17A1EA9B1C92351F00FB8D83 /* FontAwesome.otf */,
 				13B07FAE1A68108700A75B9A /* welcome */,
@@ -569,6 +572,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A1EAE51C92C51100FB8D83 /* dummy.png in Resources */,
 				17A1EAA51C9235DC00FB8D83 /* FontAwesome.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

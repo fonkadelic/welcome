@@ -33,25 +33,44 @@ var InfoSearch = React.createClass({
     }
   },
 
+  search: function(search) {
+    var that = this;
+    var search = search.toLowerCase();
 
-  search: function() {
+    // cast items to array
+    var info = Object.keys(that.state.info).map(
+      function(k) { return that.state.info[k] }
+    );
 
-  },
+    // filter items based on search key
+    var filteredItems = info.filter(
+      function (value) {
+        var title = value.title.toString().toLowerCase();
+        var text = value.text.toString().toLowerCase();
 
-  search: function() {
+        if (title.includes(search)){
+          return true;
+        }
+        else if (text.includes(search)) {
+          return true;
+        }
+        return false;
+      });
 
+    // update datasource based on filter
+    this.setState ({
+      infoSearchSource: this.state.infoSearchSource.cloneWithRows(filteredItems),
+    });
   },
 
   cancel: function() {
-
-  },
-
-  change: function() {
-
+    // set items back to original datasource
+    this.setState ({
+      infoSearchSource: this.state.infoSearchSource.cloneWithRows(this.state.info),
+    });
   },
 
   _renderRow: function(data) {
-    console.log(data);
     return (
       <View style={styles.row_item}>
         <View style={styles.first}>
@@ -63,24 +82,21 @@ var InfoSearch = React.createClass({
           </Text>
         </View>
         <View style={styles.second}>
-          <Image />
+          <Image
+            source={require('image!dummy')}
+            style={styles.image} />
         </View>
-
       </View>
     );
   },
 
   componentWillMount: function() {
-
+    // set datasource from json elements
     this.setState({
       infoSearchSource: this.state.infoSearchSource.cloneWithRows(
         this.state.info,
       ),
     });
-  },
-
-  componentDidMoutn: function() {
-    this.refs.searchBar.focus();
   },
 
   render: function() {
@@ -90,9 +106,8 @@ var InfoSearch = React.createClass({
           ref='searchBar'
           placeholder='Search'
           showsCancelButton={true}
-          onChangeText={this.test}
-          onSearchButtonPress={this.search}
-          onCancelButtonPress={this.test}
+          onChangeText={this.search}
+          onCancelButtonPress={this.cancel}
           />
         <View style={styles.minicontainer}>
           <ListView
@@ -114,19 +129,25 @@ var styles = StyleSheet.create({
     padding: 20,
     borderBottomWidth: 1,
     borderBottomColor: "lightgrey",
+    flexDirection: 'row',
   },
   title: {
     fontWeight: "bold",
   },
   text: {
-
+    paddingTop: 10,
   },
   first: {
-    flex: 0.7
+    flex: 0.8,
   },
   second: {
     flex: 0.3,
-  }
+    alignItems: 'flex-end',
+  },
+  image: {
+    width: 70,
+    height: 40,
+  },
 });
 
 module.exports = InfoSearch;
