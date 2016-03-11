@@ -40,6 +40,7 @@
 		17A1EB361C92FC3A00FB8D83 /* afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB331C92FC3A00FB8D83 /* afghanistan.png */; };
 		17A1EB371C92FC3A00FB8D83 /* iraq.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB341C92FC3A00FB8D83 /* iraq.png */; };
 		17A1EB381C92FC3A00FB8D83 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EB351C92FC3A00FB8D83 /* path.png */; };
+		17A1EB661C930DFB00FB8D83 /* libRNI18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EB611C930DF600FB8D83 /* libRNI18n.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,20 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNSearchBar;
 		};
+		17A1EB601C930DF600FB8D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDD7BF781B2D5125006FDA75;
+			remoteInfo = RNI18n;
+		};
+		17A1EB621C930DF600FB8D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDD7BF831B2D5126006FDA75;
+			remoteInfo = RNI18nTests;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -178,6 +193,7 @@
 		17A1EB331C92FC3A00FB8D83 /* afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afghanistan.png; sourceTree = "<group>"; };
 		17A1EB341C92FC3A00FB8D83 /* iraq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iraq.png; sourceTree = "<group>"; };
 		17A1EB351C92FC3A00FB8D83 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
+		17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A1EB661C930DFB00FB8D83 /* libRNI18n.a in Frameworks */,
 				17A1EACC1C92B68B00FB8D83 /* libRNSearchBar.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				17A1EAA31C9235B700FB8D83 /* libRNVectorIcons.a in Frameworks */,
@@ -323,6 +340,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17A1EB521C930DF600FB8D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A1EB611C930DF600FB8D83 /* libRNI18n.a */,
+				17A1EB631C930DF600FB8D83 /* RNI18nTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +360,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */,
 				17A1EABB1C92B68300FB8D83 /* RNSearchBar.xcodeproj */,
 				17A1EA9D1C9235B400FB8D83 /* RNVectorIcons.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -505,6 +532,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = 17A1EB521C930DF600FB8D83 /* Products */;
+					ProjectRef = 17A1EB511C930DF600FB8D83 /* RNI18n.xcodeproj */;
+				},
+				{
 					ProductGroup = 17A1EABC1C92B68300FB8D83 /* Products */;
 					ProjectRef = 17A1EABB1C92B68300FB8D83 /* RNSearchBar.xcodeproj */;
 				},
@@ -590,6 +621,20 @@
 			fileType = archive.ar;
 			path = libRNSearchBar.a;
 			remoteRef = 17A1EAC91C92B68300FB8D83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		17A1EB611C930DF600FB8D83 /* libRNI18n.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNI18n.a;
+			remoteRef = 17A1EB601C930DF600FB8D83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		17A1EB631C930DF600FB8D83 /* RNI18nTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RNI18nTests.xctest;
+			remoteRef = 17A1EB621C930DF600FB8D83 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
