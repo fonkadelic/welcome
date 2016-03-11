@@ -26,6 +26,9 @@ var styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  navigationContainer: {
+    flex: 1,
+  }
 });
 
 module.exports = styles;
