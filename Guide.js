@@ -2,6 +2,7 @@
 
 var React = require('react-native');
 var _styles = require('./styles.js');
+var GuideDetail = require('./GuideDetail.js');
 var GuideItem = require('./GuideItem.js');
 
 var {
@@ -15,79 +16,58 @@ var {
   NavigatorIOS,
 } = React;
 
-var MOCKED_COLLECTION_DATA = [
-  {id: 1, title: 'One'},
-  {id: 2, title: 'Two'},
-  {id: 3, title: 'Three'},
-  {id: 4, title: 'Four'},
-  {id: 5, title: 'Five'},
-  {id: 6, title: 'Six'},
-];
+var jsonData = require('./guides.json')
 
 var styles = StyleSheet.create({
   list: {
-    justifyContent: 'space-around',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    margin: 10,
-  },
-  row: {
-    justifyContent: 'center',
-    margin: 5,
-    width: 100,
-    height: 120,
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 18,
-    color: '#656565',
-    marginTop: 5
-  },
-  circle: {
-    height: 80,
-    width: 80,
-    borderRadius: 40,
-    backgroundColor: '#c373da',
+    paddingTop: 8,
+    paddingBottom: 8,
+    backgroundColor: '#eeeeee',
   },
 });
 
 class Guide extends Component {
   constructor(props) {
     super(props);
-    var dataSource = new ListView.DataSource(
-      {rowHasChanged: (r1, r2) => r1.id !== r2.id});
+
     this.state = {
-      dataSource: dataSource.cloneWithRows(MOCKED_COLLECTION_DATA)
+      guides: null,
+      dataSource: new ListView.DataSource({
+        rowHasChanged: (row1, row2) => row1.id !== row2.id,
+      }),
     };
   }
 
-  rowPressed() {
-    console.log('Row Pressed');
+  componentWillMount() {
+    var startGuides = jsonData.start_guides;
+    var filtered = jsonData.guides.filter(prop => startGuides.includes(prop.id));
+
+    this.setState({
+      guides: jsonData.guides,
+      dataSource: this.state.dataSource.cloneWithRows(filtered),
+    });
+  }
+
+  rowPressed(rowData) {
+    this.props.navigator.push({
+        title: rowData.title,
+        component: GuideDetail,
+        passProps: {guides: this.state.guides, subIDs: rowData.sub_guides}
+    });
   }
 
   renderRow(rowData, sectionID, rowID) {
     return (
-      <TouchableHighlight onPress={() => this.rowPressed()} underlayColor="transparent">
-        <View>
-          <View style={styles.row}>
-            <View style={styles.circle}>
-              <Image style={styles.thumb} source={{ uri: rowData.img_url }} />
-            </View>
-            <Text style={styles.title} numberOfLines={1}>{rowData.title}</Text>
-          </View>
-        </View>
-      </TouchableHighlight>
+      <GuideItem guide={rowData} onPress={this.rowPressed.bind(this)}/>
     );
   }
 
   render() {
-    return (
+    return(
       <ListView
-        contentContainerStyle={styles.list}
         dataSource={this.state.dataSource}
-        pageSize={3}
-        scrollRenderAheadDistance={500}
-        renderRow={this.renderRow.bind(this)}/>
+        renderRow={this.renderRow.bind(this)}
+        style={styles.list}/>
     );
   }
 }
