@@ -19,7 +19,7 @@ var {
 var TabBarNavigation = React.createClass({
   getInitialState: function() {
     return {
-      selectedTab: 'guide',
+      selectedTab: 'infosearch',
     }
   },
 

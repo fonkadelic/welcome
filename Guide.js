@@ -2,6 +2,8 @@
 
 var React = require('react-native');
 var _styles = require('./styles.js');
+var GridView = require('react-native-grid-view');
+var GuideItem = require('./GuideItem.js');
 
 var {
   AppRegistry,
@@ -22,7 +24,21 @@ var Guide = React.createClass({
 
   getInitialState: function() {
     return {
+      items: [
+        "eins", "zwei", "drei",
+        "eins", "zwei", "drei",
+      ],
     }
+  },
+
+  renderItem: function(item) {
+    return(
+      <View
+        style={{margin: 20}}
+        key={item}>
+        <GuideItem />
+      </View>
+    );
   },
 
   render: function() {
@@ -31,6 +47,11 @@ var Guide = React.createClass({
         <Text>
           Guide
         </Text>
+        <GridView
+          items={this.state.items}
+          itemsPerRow={3}
+          renderItem={this.renderItem}
+        />
       </View>
     );
   },
