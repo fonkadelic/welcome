@@ -2,6 +2,8 @@
 
 var React = require('react-native');
 var _styles = require('./styles.js');
+var GuideDetail = require('./GuideDetail.js');
+var GuideItem = require('./GuideItem.js');
 
 var {
   StyleSheet,
@@ -14,19 +16,58 @@ var {
   NavigatorIOS,
 } = React;
 
+var jsonData = require('./guides.json')
+
 var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 64,
+  list: {
+    paddingTop: 8,
+    paddingBottom: 8,
+    backgroundColor: '#eeeeee',
   },
 });
 
 class Guide extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      guides: null,
+      dataSource: new ListView.DataSource({
+        rowHasChanged: (row1, row2) => row1.id !== row2.id,
+      }),
+    };
+  }
+
+  componentWillMount() {
+    var startGuides = jsonData.start_guides;
+    var filtered = jsonData.guides.filter(prop => startGuides.includes(prop.id));
+
+    this.setState({
+      guides: jsonData,
+      dataSource: this.state.dataSource.cloneWithRows(filtered),
+    });
+  }
+
+  rowPressed(rowData) {
+    this.props.navigator.push({
+        title: rowData.title,
+        component: GuideDetail,
+        passProps: {guides: this.state.guides}
+    });
+  }
+
+  renderRow(rowData, sectionID, rowID) {
+    return (
+      <GuideItem guide={rowData} onPress={this.rowPressed.bind(this)}/>
+    );
+  }
+
   render() {
     return(
-      <View style={styles.container}>
-        <Text>Guide</Text>
-      </View>
+      <ListView
+        dataSource={this.state.dataSource}
+        renderRow={this.renderRow.bind(this)}
+        style={styles.list}/>
     );
   }
 }
