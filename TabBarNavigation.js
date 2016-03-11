@@ -99,7 +99,12 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'addresses'
             });
           }}>
-          <Addresses {...this.props} />
+          <NavigatorIOS
+          style={_styles.navigationContainer}
+          initialRoute={{
+          title: I18n.t("addresses"),
+          component: Addresses,
+          }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title="Profile"
