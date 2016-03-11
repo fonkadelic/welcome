@@ -13,14 +13,14 @@
       "title" : "ه رثثي وثيهذهرث",
       "subtitle" : "I need a doctor/medicine",
       "emoji" : "🤕",
-      "sub_guides" : [10, 11, 12]
+      "sub_guides" : [10]
     },
     {
       "id" : 3,
       "title" : "ه رثثي فقشرسحخقف",
       "subtitle" : "I need transport",
       "emoji" : "🚍",
-      "sub_guides" : [10, 11, 12]
+      "sub_guides" : [10, 11]
     },
     {
       "id" : 10,

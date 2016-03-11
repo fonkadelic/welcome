@@ -43,7 +43,7 @@ class Guide extends Component {
     var filtered = jsonData.guides.filter(prop => startGuides.includes(prop.id));
 
     this.setState({
-      guides: jsonData,
+      guides: jsonData.guides,
       dataSource: this.state.dataSource.cloneWithRows(filtered),
     });
   }
@@ -52,7 +52,7 @@ class Guide extends Component {
     this.props.navigator.push({
         title: rowData.title,
         component: GuideDetail,
-        passProps: {guides: this.state.guides}
+        passProps: {guides: this.state.guides, subIDs: rowData.sub_guides}
     });
   }
 
