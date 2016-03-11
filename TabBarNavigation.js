@@ -18,9 +18,19 @@ var {
 } = React;
 
 var TabBarNavigation = React.createClass({
+  propTypes: {
+    language: React.PropTypes.string,
+  },
+
+  getDefaultProps: function() {
+    return {
+      language: null,
+    }
+  },
+
   getInitialState: function() {
     return {
-      selectedTab: 'infosearch',
+      selectedTab: 'guide',
     }
   },
 
@@ -37,7 +47,7 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'guide'
             });
           }}>
-          <Guide />
+          <Guide {...this.props} />
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title="Info Search"
@@ -49,7 +59,7 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'infosearch'
             });
           }}>
-          <InfoSearch />
+          <InfoSearch {...this.props} />
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title="Addresses"
@@ -61,7 +71,7 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'addresses'
             });
           }}>
-          <Addresses />
+          <Addresses {...this.props} />
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title="Profile"
@@ -73,7 +83,7 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'profile'
             });
           }}>
-          <Profile />
+          <Profile {...this.props} />
         </Icon.TabBarItem>
       </TabBarIOS>
     );
