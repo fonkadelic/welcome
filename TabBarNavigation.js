@@ -4,6 +4,7 @@ var React = require('react-native');
 var _styles = require('./styles.js');
 var Icon = require('react-native-vector-icons/FontAwesome');
 var Guide = require('./Guide.js');
+var Chat = require('./Chat.js');
 var Addresses = require('./Addresses.js');
 var InfoSearch = require('./InfoSearch.js');
 var Profile = require('./Profile.js');
@@ -15,6 +16,7 @@ var {
   View,
   Image,
   TabBarIOS,
+  NavigatorIOS,
 } = React;
 
 var TabBarNavigation = React.createClass({
@@ -37,7 +39,29 @@ var TabBarNavigation = React.createClass({
               selectedTab: 'guide'
             });
           }}>
-          <Guide />
+          <NavigatorIOS
+              style={_styles.navigationContainer}
+              initialRoute={{
+              title: 'Guide',
+              component: Guide,
+            }}/>
+        </Icon.TabBarItem>
+        <Icon.TabBarItem
+          title="Chat"
+          selected={this.state.selectedTab === 'chat'}
+          iconName={'clone'}
+          iconSize={20}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'chat'
+            });
+          }}>
+          <NavigatorIOS
+              style={_styles.navigationContainer}
+              initialRoute={{
+              title: 'Chat',
+              component: Chat,
+            }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title="Info Search"

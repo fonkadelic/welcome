@@ -25,9 +25,6 @@ var MOCKED_COLLECTION_DATA = [
 ];
 
 var styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
   list: {
     justifyContent: 'space-around',
     flexDirection: 'row',
@@ -53,19 +50,6 @@ var styles = StyleSheet.create({
     backgroundColor: '#c373da',
   },
 });
-
-class NavigationGuide extends Component {
-  render() {
-    return(
-      <NavigatorIOS
-        style={styles.container}
-        initialRoute={{
-          title: 'Guide',
-          component: Guide,
-        }}/>
-    );
-  }
-}
 
 class Guide extends Component {
   constructor(props) {
@@ -108,4 +92,4 @@ class Guide extends Component {
   }
 }
 
-module.exports = NavigationGuide;
+module.exports = Guide;

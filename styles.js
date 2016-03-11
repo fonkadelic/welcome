@@ -8,6 +8,9 @@ var styles = StyleSheet.create({
     flex: 1,
     marginTop: 20,
   },
+  navigationContainer: {
+    flex: 1,
+  }
 });
 
 module.exports = styles;
