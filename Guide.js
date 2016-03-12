@@ -4,6 +4,7 @@ var React = require('react-native');
 var _styles = require('./styles.js');
 var GuideDetail = require('./GuideDetail.js');
 var GuideItem = require('./GuideItem.js');
+var GuidePage = require('./GuidePage.js');
 
 var jsonData = require('./guides.json')
 
@@ -20,9 +21,8 @@ var {
 
 var styles = StyleSheet.create({
   list: {
-    paddingTop: 8,
-    paddingBottom: 8,
-    backgroundColor: '#eeeeee',
+    marginTop: 8,
+    marginBottom: 8,
   },
 });
 
@@ -64,10 +64,13 @@ class Guide extends Component {
 
   render() {
     return(
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={this.renderRow.bind(this)}
-        style={styles.list}/>
+      <GuidePage>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={this.renderRow.bind(this)}
+          automaticallyAdjustContentInsets={true}
+          style={styles.list}/>
+      </GuidePage>
     );
   }
 }
