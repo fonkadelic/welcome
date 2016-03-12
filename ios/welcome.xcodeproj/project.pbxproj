@@ -53,8 +53,8 @@
 		17A1EBAA1C9338C200FB8D83 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EBA91C9338BB00FB8D83 /* libSpeechSynthesizer.a */; };
 		17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBAB1C9339D600FB8D83 /* tram-car.png */; };
 		17A1EBDD1C9356FA00FB8D83 /* almadina.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBDC1C9356FA00FB8D83 /* almadina.png */; };
-		17A1EC4D1C94434F00FB8D83 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EC4C1C94434F00FB8D83 /* restaurant.png */; };
 		17A1EC7F1C944A4200FB8D83 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EC6F1C944A3E00FB8D83 /* libAirMaps.a */; };
+		17A1ECAE1C9452E300FB8D83 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1ECAD1C9452E300FB8D83 /* restaurant.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -237,8 +237,8 @@
 		17A1EBAB1C9339D600FB8D83 /* tram-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tram-car.png"; path = "../images/tram-car.png"; sourceTree = "<group>"; };
 		17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afghanistan.png; sourceTree = "<group>"; };
 		17A1EBDC1C9356FA00FB8D83 /* almadina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = almadina.png; sourceTree = "<group>"; };
-		17A1EC4C1C94434F00FB8D83 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
 		17A1EC6A1C944A3D00FB8D83 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
+		17A1ECAD1C9452E300FB8D83 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -453,7 +453,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				17A1EC4C1C94434F00FB8D83 /* restaurant.png */,
+				17A1ECAD1C9452E300FB8D83 /* restaurant.png */,
 				17A1EBDC1C9356FA00FB8D83 /* almadina.png */,
 				17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */,
 				17A1EBAB1C9339D600FB8D83 /* tram-car.png */,
@@ -767,7 +767,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A1EC4D1C94434F00FB8D83 /* restaurant.png in Resources */,
+				17A1ECAE1C9452E300FB8D83 /* restaurant.png in Resources */,
 				17A1EBDD1C9356FA00FB8D83 /* almadina.png in Resources */,
 				17A1EB361C92FC3A00FB8D83 /* afghanistan.png in Resources */,
 				17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */,
@@ -911,6 +911,7 @@
 				INFOPLIST_FILE = welcome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.welcome;
 				PRODUCT_NAME = welcome;
 			};
 			name = Debug;
@@ -919,6 +920,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -927,6 +929,7 @@
 				INFOPLIST_FILE = welcome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.welcome;
 				PRODUCT_NAME = welcome;
 			};
 			name = Release;

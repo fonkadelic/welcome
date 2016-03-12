@@ -37,11 +37,17 @@ class GuideDetail extends Component {
       this.props.navigator.push({
           title: rowData.title,
           component: GuideDetail,
+          barTintColor: "#156fc0",
+          titleTextColor: "white",
+          tintColor: "white",
           passProps: {guides: this.props.guides, subIDs: subGuides}
       });
     } else {
       this.props.navigator.push({
           title: rowData.title,
+          barTintColor: "#156fc0",
+          titleTextColor: "white",
+          tintColor: "white",
           component: GuideDetailItems,
       });
     }

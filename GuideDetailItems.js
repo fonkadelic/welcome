@@ -38,8 +38,6 @@ var GuideDetailItems = React.createClass({
   },
 
   renderRow: function(data) {
-    console.log(data);
-    console.log("ENDE");
     return (
       <InfoBox
         {...data}

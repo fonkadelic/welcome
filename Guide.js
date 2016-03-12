@@ -21,7 +21,7 @@ var {
 
 var styles = StyleSheet.create({
   list: {
-    marginTop: 8,
+    paddingTop: 8,
     marginBottom: 8,
   },
 });
@@ -67,13 +67,16 @@ class Guide extends Component {
 
   render() {
     return(
-      <GuidePage>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={this.renderRow.bind(this)}
-          automaticallyAdjustContentInsets={true}
-          style={styles.list}/>
-      </GuidePage>
+      <View style={{marginTop: 64}}>
+        <GuidePage>
+          <ListView
+            dataSource={this.state.dataSource}
+            renderRow={this.renderRow.bind(this)}
+            contentInset={{bottom:90}}
+            automaticallyAdjustContentInsets={false}
+            style={styles.list}/>
+        </GuidePage>
+      </View>
     );
   }
 }

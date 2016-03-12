@@ -53,6 +53,7 @@ class GuideSegment extends Component {
 
   segmentPressed(index) {
     this.setState({ selectedIndex: index });
+    this.props.onPress(index);
   }
 
   renderSegment(index, title) {

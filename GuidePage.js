@@ -3,6 +3,7 @@
 var React = require('react-native');
 var _styles = require('./styles.js');
 var GuideSegment = require('./GuideSegment.js');
+var MapView = require('./MapView.js');
 
 var {
   StyleSheet,
@@ -27,19 +28,32 @@ var styles = StyleSheet.create({
   },
 });
 
-class GuidePage extends Component {
+var GuidePage = React.createClass({
+  getInitialState: function() {
+    return {
+      segment: 1,
+    }
+  },
 
+  onPress: function(data) {
+    this.setState({
+      segment: data,
+    });
+    console.log(data);
+  },
 
-  render() {
+  render: function() {
     return(
       <View style={styles.container}>
-        <GuideSegment />
+        <GuideSegment onPress={(data) => this.onPress(data)}/>
         <View style={styles.wrapper}>
-            {this.props.children}
+          {this.state.segment === 1
+          ? this.props.children
+          : <MapView />}
         </View>
       </View>
     );
-  }
-}
+  },
+});
 
 module.exports = GuidePage;

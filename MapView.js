@@ -35,7 +35,7 @@ var MapView = React.createClass({
 
   render: function() {
     return (
-      <View style={{flex: 1, marginTop: 64, marginBottom: 46,}}>
+      <View style={{flex: 1, height: 510, marginBottom: 46,}}>
         <MapViewComponent
           style= {{flex: 1}}
           initialRegion={{

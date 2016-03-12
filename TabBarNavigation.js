@@ -60,6 +60,7 @@ var TabBarNavigation = React.createClass({
               initialRoute={{
               title: I18n.t("guide"),
               component: Guide,
+              tintColor: "white",
               barTintColor: "#156fc0",
               titleTextColor: "white",
             }}/>
@@ -79,6 +80,7 @@ var TabBarNavigation = React.createClass({
               initialRoute={{
               title: I18n.t("chat"),
               component: Chat,
+              tintColor: "white",
               barTintColor: "#156fc0",
               titleTextColor: "white",
             }}/>
@@ -98,6 +100,7 @@ var TabBarNavigation = React.createClass({
           initialRoute={{
           title: I18n.t("addresses"),
           component: Addresses,
+          tintColor: "white",
           barTintColor: "#156fc0",
           titleTextColor: "white",
           }}/>
