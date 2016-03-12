@@ -17,6 +17,8 @@ var styles = StyleSheet.create({
     alignSelf: 'stretch',
     height: 1,
     backgroundColor: '#000000',
+    marginTop: 8,
+    marginBottom: 8,
     opacity: 0.12
   },
   emoji: {
@@ -32,12 +34,19 @@ var styles = StyleSheet.create({
     color: '#9b9b9b',
     paddingBottom: 5,
   },
+  phonenumber: {
+    fontSize: 20,
+    marginLeft: 8,
+    marginTop: 8,
+    textAlign: 'center',
+  },
   rowContainer: {
-    height: 140,
     marginTop: 8,
     marginBottom: 8,
     marginLeft: 16,
     marginRight: 16,
+    paddingTop: 16,
+    paddingBottom: 16,
     justifyContent: 'center',
     shadowOpacity: 0.24,
     shadowRadius: 2,
@@ -71,6 +80,10 @@ var GuideItem = React.createClass({
           <View style={styles.separator} />
           <Text style={styles.title}>{this.props.guide.title}</Text>
           <Text style={styles.subtitle}>{this.props.guide.subtitle}</Text>
+          {this.props.guide.phonenumber
+            ? <Text style={styles.phonenumber}>{this.props.guide.phonenumber}</Text>
+            : <View />
+          }
         </View>
       </TouchableHighlight>
     );
