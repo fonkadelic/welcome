@@ -17,7 +17,7 @@ var {
 var welcome = React.createClass({
   getInitialState: function() {
     return {
-      modalVisible: false,
+      modalVisible: true,
       language: null,
     }
   },

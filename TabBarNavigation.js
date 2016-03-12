@@ -9,7 +9,7 @@ var Addresses = require('./Addresses.js');
 var InfoSearch = require('./InfoSearch.js');
 var Profile = require('./Profile.js');
 var I18nService = require('./i18n.js');
-var MapView = require('./MapView.js');
+var InfoBox = require('./InfoBox.js');
 
 var {
   AppRegistry,
@@ -59,7 +59,7 @@ var TabBarNavigation = React.createClass({
               style={_styles.navigationContainer}
               initialRoute={{
               title: I18n.t("guide"),
-              component: MapView,
+              component: Guide,
             }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
