@@ -20,8 +20,8 @@ var {
 
 var styles = StyleSheet.create({
   list: {
-    paddingTop: 8,
-    paddingBottom: 8,
+    marginTop: 8,
+    marginBottom: 8,
     backgroundColor: '#eeeeee',
   },
 });
