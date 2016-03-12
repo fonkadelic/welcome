@@ -26,6 +26,10 @@ var styles = StyleSheet.create({
     alignSelf: 'stretch',
     justifyContent: 'center',
   },
+  segmentWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
   selectedSegment: {
     flex: 1,
     alignSelf: 'stretch',
@@ -36,6 +40,10 @@ var styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 17,
     color: 'white',
+    marginLeft: 6,
+  },
+  image: {
+      marginRight: 6,
   },
   separator: {
     width: 0.5,
@@ -56,8 +64,7 @@ class GuideSegment extends Component {
     this.props.onPress(index);
   }
 
-  renderSegment(index, title) {
-
+  renderSegment(index, title, image) {
     const segmentStyle =  (index == this.state.selectedIndex) ? styles.selectedSegment : styles.segment;
 
     return (
@@ -65,7 +72,10 @@ class GuideSegment extends Component {
         style={segmentStyle}
         onPress={() => this.segmentPressed(index)}
         underlayColor='transparent'>
-          <Text style={styles.text}>{title}</Text>
+          <View style={styles.segmentWrapper}>
+            <Image source={image} style={styles.image} />
+            <Text style={styles.text}>{title}</Text>
+          </View>
       </TouchableHighlight>
     );
   }
@@ -73,9 +83,9 @@ class GuideSegment extends Component {
   render() {
     return(
       <View style={styles.container}>
-        {this.renderSegment(1, 'لقهي')}
+        {this.renderSegment(1, 'لقهي', require('image!list'))}
         <View style={styles.separator} />
-        {this.renderSegment(2, 'لعهيثس')}
+        {this.renderSegment(2, 'لعهيثس', require('image!map'))}
       </View>
     );
   }
