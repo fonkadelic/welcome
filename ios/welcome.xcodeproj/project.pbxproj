@@ -52,6 +52,7 @@
 		17A1EBA31C93315C00FB8D83 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBA11C93315C00FB8D83 /* woman.png */; };
 		17A1EBAA1C9338C200FB8D83 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EBA91C9338BB00FB8D83 /* libSpeechSynthesizer.a */; };
 		17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBAB1C9339D600FB8D83 /* tram-car.png */; };
+		17A1EBDD1C9356FA00FB8D83 /* almadina.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBDC1C9356FA00FB8D83 /* almadina.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -225,6 +226,8 @@
 		17A1EBA11C93315C00FB8D83 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
 		17A1EBA41C9338BB00FB8D83 /* SpeechSynthesizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpeechSynthesizer.xcodeproj; path = "../node_modules/react-native-speech/SpeechSynthesizer.xcodeproj"; sourceTree = "<group>"; };
 		17A1EBAB1C9339D600FB8D83 /* tram-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tram-car.png"; path = "../images/tram-car.png"; sourceTree = "<group>"; };
+		17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afghanistan.png; sourceTree = "<group>"; };
+		17A1EBDC1C9356FA00FB8D83 /* almadina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = almadina.png; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -429,6 +432,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				17A1EBDC1C9356FA00FB8D83 /* almadina.png */,
+				17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */,
 				17A1EBAB1C9339D600FB8D83 /* tram-car.png */,
 				17A1EBA01C93315C00FB8D83 /* man.png */,
 				17A1EBA11C93315C00FB8D83 /* woman.png */,
@@ -729,6 +734,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A1EBDD1C9356FA00FB8D83 /* almadina.png in Resources */,
+				17A1EB361C92FC3A00FB8D83 /* afghanistan.png in Resources */,
 				17A1EBAC1C9339D600FB8D83 /* tram-car.png in Resources */,
 				17A1EBA21C93315C00FB8D83 /* man.png in Resources */,
 				17A1EBA31C93315C00FB8D83 /* woman.png in Resources */,
@@ -739,7 +746,6 @@
 				17A1EB8F1C931C3A00FB8D83 /* thumbs-down-sign.png in Resources */,
 				17A1EB901C931C3A00FB8D83 /* thumbs-up-sign.png in Resources */,
 				17A1EB911C931C3A00FB8D83 /* waving-hand-sign.png in Resources */,
-				17A1EB361C92FC3A00FB8D83 /* afghanistan.png in Resources */,
 				17A1EB371C92FC3A00FB8D83 /* iraq.png in Resources */,
 				17A1EB381C92FC3A00FB8D83 /* path.png in Resources */,
 				17A1EB321C92FAB200FB8D83 /* syria.png in Resources */,
