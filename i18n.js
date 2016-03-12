@@ -18,25 +18,25 @@ class I18nService {
         profile: "Profile"
       },
       syria: {
-        guide: "Guide",
-        chat: "Chat",
-        infosearch: "Info Search",
-        addresses: "Addresses",
-        profile: "Profile"
+        guide: "دليل",
+        chat: "يتحدث",
+        infosearch: "معلومات",
+        addresses: "دفتر العناوين",
+        profile: "البيانات الشخصية"
       },
       afghanistan: {
-        guide: "Guide",
-        chat: "Chat",
-        infosearch: "Info Search",
-        addresses: "Addresses",
-        profile: "Profile"
+        guide: "دليل",
+        chat: "يتحدث",
+        infosearch: "معلومات",
+        addresses: "دفتر العناوين",
+        profile: "البيانات الشخصية"
       },
       iraq: {
-        guide: "Guide",
-        chat: "Chat",
-        infosearch: "Info Search",
-        addresses: "Addresses",
-        profile: "Profile"
+        guide: "دليل",
+        chat: "يتحدث",
+        infosearch: "معلومات",
+        addresses: "دفتر العناوين",
+        profile: "البيانات الشخصية"
       },
     };
   }

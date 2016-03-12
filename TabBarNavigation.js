@@ -38,7 +38,7 @@ var TabBarNavigation = React.createClass({
   },
 
   render: function() {
-    I18nService.set("en");
+    I18nService.set("syria");
     var I18n = I18nService.get();
 
     return (
@@ -110,7 +110,7 @@ var TabBarNavigation = React.createClass({
           }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
-          title="Profile"
+        title={I18n.t("profile")}
           selected={this.state.selectedTab === 'profile'}
           iconName={'user'}
           iconSize={20}

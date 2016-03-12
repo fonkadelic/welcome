@@ -30,12 +30,12 @@ var Chat = React.createClass({
           <ChatItem
             image={require('image!hugging-face')}
             text="اثممخ"
-            german_text="hello"
+            german_text="Hallo"
           />
           <ChatItem
             image={require('image!waving-hand-sign')}
             text="زظث"
-            german_text="bye"
+            german_text="Tschüss"
           />
         </View>
 
@@ -48,17 +48,17 @@ var Chat = React.createClass({
           <ChatItem
             image={require('image!station')}
             text="زشاراخب"
-            german_text="train station"
+            german_text="Bahnhof"
           />
           <ChatItem
             image={require('image!bus')}
             text="زعس"
-            german_text="bus"
+            german_text="Bus"
           />
           <ChatItem
             image={require('image!tram-car')}
             text="فشطه"
-            german_text="taxi"
+            german_text="Taxi"
           />
         </View>
 
@@ -71,17 +71,17 @@ var Chat = React.createClass({
           <ChatItem
             image={require('image!family')}
             text="زشاراخب"
-            german_text="family"
+            german_text="Familie"
           />
           <ChatItem
             image={require('image!man')}
             text="زعس"
-            german_text="father"
+            german_text="Vater"
           />
           <ChatItem
             image={require('image!woman')}
             text="فشطه"
-            german_text="mother"
+            german_text="Mutter"
           />
         </View>
 
@@ -94,12 +94,12 @@ var Chat = React.createClass({
           <ChatItem
             image={require('image!thumbs-up-sign')}
             text="ظثس"
-            german_text="yes"
+            german_text="Ja"
           />
           <ChatItem
             image={require('image!thumbs-down-sign')}
             text="رخ"
-            german_text="no"
+            german_text="Nein"
           />
         </View>
       </ScrollView>
