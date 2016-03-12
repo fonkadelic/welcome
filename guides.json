@@ -1,0 +1,68 @@
+{
+  "start_guides" : [ 1, 2, 3],
+  "guides" : [
+    {
+      "id" : 1,
+      "title" : "ه اشدث فخ ساخح",
+      "subtitle" : "I need to buy something",
+      "emoji" : "🛍",
+      "sub_guides" : [10, 11, 12]
+    },
+    {
+      "id" : 2,
+      "title" : "ه رثثي وثيهذهرث",
+      "subtitle" : "I need a doctor/medicine",
+      "emoji" : "🤕",
+      "sub_guides" : [10]
+    },
+    {
+      "id" : 3,
+      "title" : "ه رثثي فقشرسحخقف",
+      "subtitle" : "I need transport",
+      "emoji" : "🚍",
+      "sub_guides" : [10, 11]
+    },
+    {
+      "id" : 10,
+      "title" : "ه صشر فخ زعظ بخخي",
+      "subtitle" : "Ich möchte Essen kaufen",
+      "emoji" : "🍅",
+      "sub_guides" : [20, 21, 22],
+    },
+    {
+      "id" : 11,
+      "title" : "ه صشرف فخ زعظ ذمخفاثس",
+      "subtitle" : "I want to buy clothes",
+      "emoji" : "👕",
+      "sub_guides" : [],
+    },
+    {
+      "id" : 12,
+      "title" : "ه صشرف فخ زعظ خفاثق فاهرلس",
+      "subtitle" : "I want to buy something else",
+      "emoji" : "🍼",
+      "sub_guides" : [],
+    },
+    {
+      "id" : 20,
+      "title" : "حلا ه صشرف فخ",
+      "subtitle" : "I want to find a gorcery store with halal",
+      "emoji" : "🍛",
+      "sub_guides" : [],
+    },
+    {
+      "id" : 21,
+      "title" : "لثقوشر سعحثقشقنثف",
+      "subtitle" : "I want to find a regular grocery store",
+      "emoji" : "🏪",
+      "sub_guides" : [],
+    },
+    {
+      "id" : 22,
+      "title" : "ه صشرف فخ زعظ دثلفشزمثس",
+      "subtitle" : "I want to find a market",
+      "emoji" : "🌶",
+      "sub_guides" : [],
+    },
+  ]
+}
