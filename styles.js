@@ -11,6 +11,14 @@ var styles = StyleSheet.create({
   default_font: {
     fontFamily: "SF UI Text",
   },
+  box_shadow: {
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
+  },
   box: {
     borderColor: "#fafafa",
     borderWidth: 0.5,

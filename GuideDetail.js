@@ -2,7 +2,9 @@
 
 var React = require('react-native');
 var _styles = require('./styles.js');
-var GuideItem = require('./GuideItem.js')
+var GuideItem = require('./GuideItem.js');
+var GuideDetailItems = require('./GuideDetailItems.js');
+
 
 var {
   StyleSheet,
@@ -36,6 +38,11 @@ class GuideDetail extends Component {
           title: rowData.title,
           component: GuideDetail,
           passProps: {guides: this.props.guides, subIDs: subGuides}
+      });
+    } else {
+      this.props.navigator.push({
+          title: rowData.title,
+          component: GuideDetailItems,
       });
     }
   }
