@@ -39,7 +39,7 @@ var ChatItem = React.createClass({
     Speech.speak({
       text: this.props.german_text,
       voice: 'en'
-    })
+    });
   },
 
   render: function() {
