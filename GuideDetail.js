@@ -49,6 +49,9 @@ class GuideDetail extends Component {
           titleTextColor: "white",
           tintColor: "white",
           component: GuideDetailItems,
+          barTintColor: "#156fc0",
+          titleTextColor: "white",
+          tintColor: "white"
       });
     }
   }

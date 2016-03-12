@@ -48,7 +48,7 @@ var TabBarNavigation = React.createClass({
         <Icon.TabBarItem
           title={I18n.t("guide")}
           selected={this.state.selectedTab === 'guide'}
-          iconName={'bus'}
+          iconName={'map-signs'}
           iconSize={20}
           onPress={() => {
             this.setState({

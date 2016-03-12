@@ -34,7 +34,7 @@ var LanguageBox = React.createClass({
 
   render: function() {
     return (
-      <TouchableHighlight onPress={()=> this.props.onSelect(this.props.text)}>
+      <TouchableHighlight onPress={()=> this.props.onSelect(this.props.text)} underlayColor='transparent'>
         <View style={[styles.container, _styles.box]}>
           <Image
             source={this.props.image}
