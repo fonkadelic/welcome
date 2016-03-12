@@ -10,6 +10,7 @@ var InfoSearch = require('./InfoSearch.js');
 var Profile = require('./Profile.js');
 var I18nService = require('./i18n.js');
 var InfoBox = require('./InfoBox.js');
+var Bye = require('./Bye.js');
 
 var {
   AppRegistry,
@@ -100,6 +101,26 @@ var TabBarNavigation = React.createClass({
           initialRoute={{
           title: I18n.t("addresses"),
           component: Addresses,
+          tintColor: "white",
+          barTintColor: "#156fc0",
+          titleTextColor: "white",
+          }}/>
+        </Icon.TabBarItem>
+        <Icon.TabBarItem
+          title="حول وانتهى"
+          selected={this.state.selectedTab === 'out'}
+          iconName={'gift'}
+          iconSize={20}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'out'
+            });
+          }}>
+          <NavigatorIOS
+          style={_styles.navigationContainer}
+          initialRoute={{
+          title: "حول وانتهى",
+          component: Bye,
           tintColor: "white",
           barTintColor: "#156fc0",
           titleTextColor: "white",

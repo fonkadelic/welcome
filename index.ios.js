@@ -4,6 +4,7 @@ var React = require('react-native');
 
 var TabBarNavigation = require('./TabBarNavigation.js');
 var Language = require('./Landing/language.js');
+var Bye = require('./Bye.js');
 
 var {
   AppRegistry,
