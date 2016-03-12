@@ -5,6 +5,8 @@ var _styles = require('./styles.js');
 var GuideDetail = require('./GuideDetail.js');
 var GuideItem = require('./GuideItem.js');
 
+var jsonData = require('./guides.json')
+
 var {
   StyleSheet,
   Text,
@@ -15,8 +17,6 @@ var {
   Component,
   NavigatorIOS,
 } = React;
-
-var jsonData = require('./guides.json')
 
 var styles = StyleSheet.create({
   list: {
@@ -58,7 +58,7 @@ class Guide extends Component {
 
   renderRow(rowData, sectionID, rowID) {
     return (
-      <GuideItem guide={rowData} onPress={this.rowPressed.bind(this)}/>
+      <GuideItem guide={rowData} onPress={this.rowPressed.bind(this)} />
     );
   }
 
