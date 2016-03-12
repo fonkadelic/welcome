@@ -55,6 +55,7 @@
 		17A1EBDD1C9356FA00FB8D83 /* almadina.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1EBDC1C9356FA00FB8D83 /* almadina.png */; };
 		17A1EC7F1C944A4200FB8D83 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1EC6F1C944A3E00FB8D83 /* libAirMaps.a */; };
 		17A1ECAE1C9452E300FB8D83 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A1ECAD1C9452E300FB8D83 /* restaurant.png */; };
+		3EB0947E1C9466340065A345 /* thank-you.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0947D1C9466340065A345 /* thank-you.png */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -239,6 +240,7 @@
 		17A1EBDC1C9356FA00FB8D83 /* almadina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = almadina.png; sourceTree = "<group>"; };
 		17A1EC6A1C944A3D00FB8D83 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		17A1ECAD1C9452E300FB8D83 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
+		3EB0947D1C9466340065A345 /* thank-you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thank-you.png"; path = "../images/thank-you.png"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -453,7 +455,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				17A1ECAD1C9452E300FB8D83 /* restaurant.png */,
+				3EB0947D1C9466340065A345 /* thank-you.png */,
+				17A1EC4C1C94434F00FB8D83 /* restaurant.png */,
 				17A1EBDC1C9356FA00FB8D83 /* almadina.png */,
 				17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */,
 				17A1EBAB1C9339D600FB8D83 /* tram-car.png */,
@@ -789,6 +792,7 @@
 				17A1EB181C92E47500FB8D83 /* SF-UI-Text-HeavyItalic.otf in Resources */,
 				17A1EB191C92E47500FB8D83 /* SF-UI-Text-Light.otf in Resources */,
 				17A1EB1A1C92E47500FB8D83 /* SF-UI-Text-LightItalic.otf in Resources */,
+				3EB0947E1C9466340065A345 /* thank-you.png in Resources */,
 				17A1EB1B1C92E47500FB8D83 /* SF-UI-Text-Medium.otf in Resources */,
 				17A1EB1C1C92E47500FB8D83 /* SF-UI-Text-MediumItalic.otf in Resources */,
 				17A1EB1D1C92E47500FB8D83 /* SF-UI-Text-Regular.otf in Resources */,

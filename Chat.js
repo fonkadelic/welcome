@@ -101,6 +101,11 @@ var Chat = React.createClass({
             text="رخ"
             german_text="Nein"
           />
+          <ChatItem
+            image={require('image!thank-you')}
+            text="شكرا"
+            german_text="Danke"
+          />
         </View>
       </ScrollView>
     );
