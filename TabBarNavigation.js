@@ -48,7 +48,7 @@ var TabBarNavigation = React.createClass({
         <Icon.TabBarItem
           title={I18n.t("guide")}
           selected={this.state.selectedTab === 'guide'}
-          iconName={'clone'}
+          iconName={'bus'}
           iconSize={20}
           onPress={() => {
             this.setState({
@@ -60,12 +60,14 @@ var TabBarNavigation = React.createClass({
               initialRoute={{
               title: I18n.t("guide"),
               component: Guide,
+              barTintColor: "#156fc0",
+              titleTextColor: "white",
             }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
           title={I18n.t("chat")}
           selected={this.state.selectedTab === 'chat'}
-          iconName={'clone'}
+          iconName={'comment'}
           iconSize={20}
           onPress={() => {
             this.setState({
@@ -82,18 +84,6 @@ var TabBarNavigation = React.createClass({
             }}/>
         </Icon.TabBarItem>
         <Icon.TabBarItem
-          title={I18n.t("infosearch")}
-          selected={this.state.selectedTab === 'infosearch'}
-          iconName={'bus'}
-          iconSize={20}
-          onPress={() => {
-            this.setState({
-              selectedTab: 'infosearch'
-            });
-          }}>
-          <InfoSearch {...this.props} />
-        </Icon.TabBarItem>
-        <Icon.TabBarItem
           title={I18n.t("addresses")}
           selected={this.state.selectedTab === 'addresses'}
           iconName={'bell'}
@@ -108,19 +98,9 @@ var TabBarNavigation = React.createClass({
           initialRoute={{
           title: I18n.t("addresses"),
           component: Addresses,
+          barTintColor: "#156fc0",
+          titleTextColor: "white",
           }}/>
-        </Icon.TabBarItem>
-        <Icon.TabBarItem
-        title={I18n.t("profile")}
-          selected={this.state.selectedTab === 'profile'}
-          iconName={'user'}
-          iconSize={20}
-          onPress={() => {
-            this.setState({
-              selectedTab: 'profile'
-            });
-          }}>
-          <Profile {...this.props} />
         </Icon.TabBarItem>
       </TabBarIOS>
     );
