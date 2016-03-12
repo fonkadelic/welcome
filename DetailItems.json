@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "image": require('image!almadina'),
+      "german_name": "Al Madina",
+      "german_address_line1": "Furtmayrstr. 10",
+      "german_address_line2": "93055 Regensburg",
+      "german_time1": "Mo - Fr 9 - 20 Uhr",
+      "german_time2": "Sa 9 - 19 Uhr",
+      "arabic_name": "شم ؤشيهرش ؤشقنف",
+      "arabic_address_line1": "  بعقفوشظثقسفق. ١٠",
+      "arabic_address_line2": "٩٣٠٥٥ قثلثرسزعقل",
+      "arabic_time1": "  وخ/بق ١٠/١٨٠٠ ",
+      "arabic_time2": "سش ٠٩٢٠ عاق",
+    },
+    {
+      "image": require('image!restaurant'),
+      "german_name": "Cavusoglu",
+      "german_address_line1": "Implerstr. 23",
+      "german_address_line2": "93055 Regensburg",
+      "german_time1": "Mo-Fr. 09-20 Uhr",
+      "german_time2": "Sa 09-19 Uhr",
+      "arabic_name": "لعشسبمكتشسبي",
+      "arabic_address_line1": "بعقفوشظثقسفق. ١٠",
+      "arabic_address_line2": "٩٣٠٥٥ قثلثرسزعقل",
+      "arabic_time1": "وخ/بق ١٠/١٨٠٠",
+      "arabic_time2": "سش ٠٩٢٠ عاق",
+    },
+  ]
+}

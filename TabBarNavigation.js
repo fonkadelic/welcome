@@ -9,6 +9,7 @@ var Addresses = require('./Addresses.js');
 var InfoSearch = require('./InfoSearch.js');
 var Profile = require('./Profile.js');
 var I18nService = require('./i18n.js');
+var InfoBox = require('./InfoBox.js');
 
 var {
   AppRegistry,
