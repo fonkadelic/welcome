@@ -52,7 +52,10 @@ class Guide extends Component {
     this.props.navigator.push({
         title: rowData.title,
         component: GuideDetail,
-        passProps: {guides: this.state.guides, subIDs: rowData.sub_guides}
+        passProps: {guides: this.state.guides, subIDs: rowData.sub_guides},
+        barTintColor: "#156fc0",
+        titleTextColor: "white",
+        tintColor: "white"
     });
   }
 
