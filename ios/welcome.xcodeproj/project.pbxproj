@@ -456,7 +456,6 @@
 			isa = PBXGroup;
 			children = (
 				3EB0947D1C9466340065A345 /* thank-you.png */,
-				17A1EC4C1C94434F00FB8D83 /* restaurant.png */,
 				17A1EBDC1C9356FA00FB8D83 /* almadina.png */,
 				17A1EBDB1C9356BB00FB8D83 /* afghanistan.png */,
 				17A1EBAB1C9339D600FB8D83 /* tram-car.png */,
@@ -559,6 +558,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = QF9D6J46TL;
 					};
 				};
 			};
@@ -906,6 +908,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,6 +921,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.welcome;
 				PRODUCT_NAME = welcome;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -924,6 +929,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -935,6 +942,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.welcome;
 				PRODUCT_NAME = welcome;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
