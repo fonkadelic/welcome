@@ -51,11 +51,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
-<<<<<<< HEAD
-=======
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
->>>>>>> 55fc19223c139d0e9dc395bc2b84694f4ae489e0
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
